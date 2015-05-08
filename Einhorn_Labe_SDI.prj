@@ -26,3 +26,7 @@
 	Working Directory=
 	Selected Debugger=0
 	Source Paths=
+[Group]
+	0=AssociatingJS2
+[Files - AssociatingJS2]
+	0=index.html
