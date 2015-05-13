@@ -10,4 +10,13 @@ var arrayElement2 = prompt("Please enter the Y value for the first vector:"); //
 var arrayElement3 = prompt("Please enter the X value for the second vector:"); // this is to get the third array element
 var arrayElement4 = prompt("Please enter the Y value for the second vector:"); // this is to get the fourth array element
 
-console.log(arrayElement1 + "," +arrayElement2 + "," +arrayElement3 + "," + arrayElement4);
+var array1 = [arrayElement1, arrayElement2];
+var array2 = [arrayElement3, arrayElement4];
+
+vectorAdd1 =  [array1[0]+array2[0], array1[1]+array2[1]];
+
+
+
+
+
+console.log(vectorAdd1);
