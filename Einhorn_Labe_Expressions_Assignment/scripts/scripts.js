@@ -19,6 +19,7 @@ var arrayOutput1 = ("Adding (" + array1[0] + "," + array1[1] + ") + (" + array2[
 var arrayOutput2 = ("\nGives you (" + vectorAdd1[0] + "," + vectorAdd1[1] + ")"); // second line of the output here
 
 console.log(arrayOutput1 + arrayOutput2); // combine both lines of the output into an alert
+alert(arrayOutput1 + arrayOutput2); // combine both lines of the output into an alert
 
 // This would be more efficient in a loop, but haven't gotten that far in this class (though i'm pretty sure it's not much different from other languages
 array1[0]++; // incrementing value in array1[0]
@@ -31,7 +32,7 @@ var arrayOutput1 = ("Adding (" + array1[0] + "," + array1[1] + ") + (" + array2[
 var arrayOutput2 = ("\nGives you (" + vectorAdd1[0] + "," + vectorAdd1[1] + ")"); // second line of the output here
 
 console.log(arrayOutput1 + arrayOutput2); // combine both lines of the output into an alert
-
+alert(arrayOutput1 + arrayOutput2); // combine both lines of the output into an alert
 
 /*
 Test output run one:
