@@ -10,45 +10,45 @@ var movieName; // variable for movie name
 var price = 0; // sum will be here
 var childTicketPrice = 10.50; // using local theaters price
 var adultTicketPrice = 14.00; // using local theaters price
-var childrenAsAdults;
-var numberOfChildrenAsAdults;
+var childrenAsAdults; // will be used to check if children are coming in as adults
+var numberOfChildrenAsAdults; // number of children to increase/decrease appropriate variables
 
 childTickets = Number(prompt("Please enter number of children's tickets")); // get input
 console.log("Number of child tickets: " + childTickets); // check for numeric value
-if(childTickets === ""){
+if(childTickets === ""){ // if null value
     childTickets = Number(prompt("Invalid number, Please enter number of children's tickets")); // get input
 }
 
 adultTickets = Number(prompt("Please enter number of adult's tickets")); // get input
 console.log("number of adult tickets: " + adultTickets); // check for numeric value
-if(adultTickets === ""){
+if(adultTickets === ""){ // if null value
     adultTickets = Number(prompt("Invalid number, Please enter number of adult's tickets")); // get input
 }
 
 childrenAsAdults = prompt("Are any children coming in as adults? (Y/N)"); // get input
 console.log("Children coming in as adults: " + childrenAsAdults); // check for numeric value
-if(childrenAsAdults === "Y" || childrenAsAdults === "y"){
+if(childrenAsAdults === "Y" || childrenAsAdults === "y"){ // if user responded "Y" or "y"
     numberOfChildrenAsAdults = Number(prompt("Please enter number of children coming in as adults")); // get input
-    if(numberOfChildrenAsAdults > childTickets){
+    if(numberOfChildrenAsAdults > childTickets){ // if number of children coming in as adults is higher than number of children
         numberOfChildrenAsAdults = Number(prompt("The number was invalid, please try again:")); // get input
-    } else {
-        childTickets -= numberOfChildrenAsAdults;
-        adultTickets += numberOfChildrenAsAdults;
+    } else { //otherwise
+        childTickets -= numberOfChildrenAsAdults; // decrease number of children from calculation
+        adultTickets += numberOfChildrenAsAdults; // increase number of adults
     }
-} else if(childrenAsAdults === "N" || childrenAsAdults === "n") {
-    console.log("No children are coming in as adults")
-} else {
-    childrenAsAdults = prompt("That was an invalid response, please try again");
+} else if(childrenAsAdults === "N" || childrenAsAdults === "n") { // if response is "N" or "n"
+    console.log("No children are coming in as adults") // console output for failed condition
+} else { // otherwise
+    childrenAsAdults = prompt("That was an invalid response, please try again"); //reprompt for information without, a loop this can fail
 }
 
 movieName = (childTickets === 0) ? "Mad Max: Fury Road" : "Avengers: Age of Ultron (2015)"; // Ternary operator ftw
 console.log(movieName); // Verification that Ternary was setup correctly
 
-if (childTickets === 0 && adultTickets === 0) {
-    alert("No tickets are being purchased");
-    console.log("No tickets are being purchased");
-} else {
-    price = adultTickets * adultTicketPrice + childTickets * childTicketPrice;
-    alert(childTickets + " Children and " + adultTickets + " Adults are watching " + movieName + " for a total cost of $" + price.toFixed(2));
-    console.log(childTickets + " Children and " + adultTickets + " Adults are watching " + movieName + " for a total cost of $" + price.toFixed(2));
+if (childTickets === 0 && adultTickets === 0) { //if no child or adult tickets are being purchased
+    alert("No tickets are being purchased"); // alert the user of such
+    console.log("No tickets are being purchased"); // log the same thing
+} else { // otherwise
+    price = adultTickets * adultTicketPrice + childTickets * childTicketPrice; // calculate price
+    alert(childTickets + " Children and " + adultTickets + " Adults are watching " + movieName + " for a total cost of $" + price.toFixed(2)); // output alert with formating
+    console.log(childTickets + " Children and " + adultTickets + " Adults are watching " + movieName + " for a total cost of $" + price.toFixed(2)); //output to console with formatting
 }
