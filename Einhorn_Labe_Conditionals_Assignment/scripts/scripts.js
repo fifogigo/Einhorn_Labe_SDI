@@ -8,21 +8,9 @@ var parentPresent;
 var movieRating;
 var movieName;
 
-prompt;// prompt to get isChild
-if(){
-    //check if variable assigned is a child and do if true
-}else if(){
-    //check variable if assigned if not a child
-}else{
-    //no other condition is true, reprompt for informtion
-}
+movieRating = prompt("Please enter the Movies Rating");// prompt to get isChild
+console.log(movieRating); // Output results to console
 
-prompt; //prompt to see if parent is present
-prompt; //prompt to get movie rating
-if(){
-   // check isChild, parentPresent, and movieRating is true
-} else if(){
-    // check isChild, parentPresnt, and movieRating is false
-} else {
-    // reprompt for input
-}
+isChild = prompt("Please enter if this ticket is for a Child or Adult");// prompt to get isChild
+console.log(isChild); // Output results to console
+
