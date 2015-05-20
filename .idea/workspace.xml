@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33e634f2-b06c-4c73-9dda-95acfc48678d" name="Default" comment="" />
+    <list default="true" id="33e634f2-b06c-4c73-9dda-95acfc48678d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Einhorn_Labe_Conditionals_Assignment/scripts/scripts.js" afterPath="$PROJECT_DIR$/Einhorn_Labe_Conditionals_Assignment/scripts/scripts.js" />
+    </list>
     <ignored path="Einhorn_Labe_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,24 +33,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Einhorn_Labe_Conditionals_Assignment/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Einhorn_Labe_Conditionals_Assignment/scripts/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.49945593">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,6 +99,7 @@
         <option value="$PROJECT_DIR$/Prompt and Alert/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/Einhorn_Labe_Expressions_Assignment/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/Conditionals/scripts/scripts.js" />
+        <option value="$PROJECT_DIR$/Einhorn_Labe_Conditionals_Assignment/scripts/scripts.js" />
       </list>
     </option>
   </component>
@@ -715,20 +716,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Einhorn_Labe_Conditionals_Assignment/scripts/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Einhorn_Labe_Conditionals_Assignment/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Einhorn_Labe_Conditionals_Assignment/scripts/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49945593">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
           <folding />
         </state>
       </provider>
