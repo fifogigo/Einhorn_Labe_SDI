@@ -1,5 +1,6 @@
 /**
- * Created by fifogigo on 5/12/2015.
+ * Created by Labe Einhorn on 5/21/2015.
+ * Conditionals assignment.
  */
 
 // Working Idea, make a calculator that gets input, from user about watching a movie at a theater
@@ -34,6 +35,7 @@ if(childrenAsAdults === "Y" || childrenAsAdults === "y"){ // if user responded "
     } else { //otherwise
         childTickets -= numberOfChildrenAsAdults; // decrease number of children from calculation
         adultTickets += numberOfChildrenAsAdults; // increase number of adults
+        console.log("Number of children coming in as adults " + numberOfChildrenAsAdults); // output to console for results of test
     }
 } else if(childrenAsAdults === "N" || childrenAsAdults === "n") { // if response is "N" or "n"
     console.log("No children are coming in as adults") // console output for failed condition
@@ -52,3 +54,28 @@ if (childTickets === 0 && adultTickets === 0) { //if no child or adult tickets a
     alert(childTickets + " Children and " + adultTickets + " Adults are watching " + movieName + " for a total cost of $" + price.toFixed(2)); // output alert with formating
     console.log(childTickets + " Children and " + adultTickets + " Adults are watching " + movieName + " for a total cost of $" + price.toFixed(2)); //output to console with formatting
 }
+
+/*
+ Number of child tickets: 1
+ number of adult tickets: 1
+ Children coming in as adults: y
+ Number of children coming in as adults 1
+ Mad Max: Fury Road
+ 0 Children and 2 Adults are watching Mad Max: Fury Road for a total cost of $28.00
+
+
+ Number of child tickets: 1
+ number of adult tickets: 1
+ Children coming in as adults: n
+ No children are coming in as adults
+ Avengers: Age of Ultron (2015)
+ 1 Children and 1 Adults are watching Avengers: Age of Ultron (2015) for a total cost of $24.50
+
+
+ Number of child tickets: 4
+ number of adult tickets: 4
+ Children coming in as adults: y
+ Number of children coming in as adults 3
+ Avengers: Age of Ultron (2015)
+ 1 Children and 7 Adults are watching Avengers: Age of Ultron (2015) for a total cost of $108.50
+ */
