@@ -4,13 +4,19 @@
  */
 
 // Function to get input
+function getUserInput(){
 
+}
 
 // Function to calculate new minimum balance based off of current balance, amount paid, and apr
+var calculateBalance = function(){
 
+}
 
 // Function to display output
+function displayOutput(){
 
+}
 
 // Main document here
 
