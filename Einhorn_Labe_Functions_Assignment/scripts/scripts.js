@@ -19,11 +19,14 @@ function getUserInput(inputMessage){
 var calculateBalance = function(balance, payment, apr){
     console.log("passed in values " + balance, payment, apr);
     return balance - payment + (apr/1200) * balance;
-}
+};
 
 // Function to display output
-function displayOutput(){
-
+function displayOutput(bal, paid, apr, total){
+    var msg1 = "The remaining balance from an initial balance of $" + bal + " with a payment of $" + paid + "\n";
+    var msg2 = "with an apr of " + apr + "% is $" + total.toFixed(2);
+    alert(msg1 + msg2);
+    console.log(msg1 + msg2);
 }
 
 // Main document here
@@ -36,3 +39,4 @@ var currentApr = Number(getUserInput("Please enter the current apr"));
 console.log("Returned value is: " + currentApr);
 var total = calculateBalance(currentBalance, paymentAmount, currentApr);
 console.log("Remaining amount " + total);
+displayOutput(currentBalance, paymentAmount, currentApr, total);
