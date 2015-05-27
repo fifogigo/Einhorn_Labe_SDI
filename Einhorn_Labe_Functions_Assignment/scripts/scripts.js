@@ -6,11 +6,10 @@
 // Function to get input
 function getUserInput(inputMessage){
     var result = Number(prompt(inputMessage));
-    console.log("Initial entered value is " + result);
     while(!(result > 0)){
         result = Number(prompt("Sorry, the entered value was not a number\n" + inputMessage));
-        console.log("reprompted value is " + result);
     }
+    console.log("Result of input is $" + result)
     return result;
 }
 
@@ -32,11 +31,8 @@ function displayOutput(bal, paid, apr, total){
 // Main document here
 
 var currentBalance = Number(getUserInput("Please enter the current balance"));
-console.log("Returned value is: " + currentBalance);
 var paymentAmount = Number(getUserInput("Please enter the amount paid"));
-console.log("Returned value is: " + paymentAmount);
 var currentApr = Number(getUserInput("Please enter the current apr"));
-console.log("Returned value is: " + currentApr);
 var total = calculateBalance(currentBalance, paymentAmount, currentApr);
-console.log("Remaining amount " + total);
+console.log("Result of apr calculation is $" + total.toFixed(2));
 displayOutput(currentBalance, paymentAmount, currentApr, total);
